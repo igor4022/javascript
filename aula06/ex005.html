@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+
+    <style>
+        body {
+            background-color: rgb(42, 124, 165);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+
+</head>
+<body>
+    
+        <h1>Iniciando estudos com DOM</h1>
+        <p>Aqui vai o resultado</p>
+        <p>Aprenda a usar o <strong>DOM</strong> em JavaScript</p>
+        <div>Clique em min</div>
+
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+        var  nome = window.prompt('Qual seu nome?')
+        document.write(`Praser <strong>${nome}</strong> <br/>`)
+        window.document.write('Está escrito assim: ' + p1.innerHTML)
+        p1.style.color = 'white'
+    </script>
+</body>
+</html>
+
+<!--
+        ___   _
+        /   '-/  ]           ,,,
+        [  ]=@==============#   ]
+        /_______--]          ,,,    IGOR...(-_-)
+
+-->
