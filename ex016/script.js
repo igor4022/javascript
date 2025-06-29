@@ -6,13 +6,12 @@ function resultado() {
     var i = Number(inc.value)
     var f = Number(fim.value)
     var p = Number(pas.value)
-    var cal = window.document.getElementById('calculando')
-    var m = i, f, p
     var r = window.document.getElementById('resultado')
 
-    if (cal + m ) {
-        for (var c = i;c <= f;c + p ) {
-            r.innerHTML + `${c}`
+        for (var c = i;c <= f;c += p ) {
+            r.innerHTML += `${c}`
         }
-    }
+    
 }
+
+                            
