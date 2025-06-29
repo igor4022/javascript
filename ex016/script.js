@@ -7,11 +7,14 @@ function resultado() {
     var f = Number(fim.value)
     var p = Number(pas.value)
     var r = window.document.getElementById('resultado')
-
-        for (var c = i;c <= f;c += p ) {
+    if (i > f)
+        for (var c = i; c <= f; c += p ) {
             r.innerHTML += `${c}`
+        } else {
+            for (var c = i; c >= f; c-=p)
+                r.innerHTML += `${c}`
         }
     
-}
+    }
 
                             
