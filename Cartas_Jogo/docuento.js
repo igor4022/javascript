@@ -4,6 +4,7 @@ const mesas = document.querySelectorAll(".mesa")
 
 let movimento 
 
+
 const dragStart = (event) => {
     movimento = event.target
     console.log(movimento)
@@ -15,6 +16,14 @@ const dragOver = (event) => {
 
 const drop = ({ target }) => {
     target.append(movimento)
+    
+    const numero = Math.floor(Math.random() * 500) + 1
+    const numero2 = Math.floor(Math.random() * 500) + 1
+
+    document.getElementById("valor").textContent = numero
+
+    document.getElementById("valor2").textContent = numero2
+  
 }
 
 const apagarCarta = (event) => {
