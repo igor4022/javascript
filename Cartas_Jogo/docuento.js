@@ -17,6 +17,11 @@ const drop = ({ target }) => {
     target.append(movimento)
 }
 
+const apagarCarta = (event) => {
+    event.preventDefault()
+    cartas.remove()
+}
+
 /*Colocação de campo de batalha / FUNÇÕES de CAMPO*/
 
 mesas.forEach((cas) => {
@@ -36,4 +41,5 @@ locals.forEach((cal) => {
 cartas.forEach((card) => {
 
     card.addEventListener("dragstart", dragStart)
+    card.addEventListener("contextmenu", apagarCarta)
 })
