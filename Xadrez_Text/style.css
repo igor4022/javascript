@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+    width: 100vw;
+    padding: 5px;
+}
+
+.fora {
+    position: relative;
+}
+
+.mesa {
+    position: relative;
+    background-color: antiquewhite;
+    width: 850px;
+    height: 820px;
+    left: 20%;
+    margin: 10px;
+    box-shadow: 0px 0px 7px 0px black;
+}
+
+.tabuleiro {
+    position: relative;
+    display: flex;
+    background-color: #b87723;
+    width: 640px;
+    padding-left: 20px;
+    padding-right: 20px;
+    top: 10%;
+    left: 10%;
+}
+
+.quadrado_verde {
+    position: relative;
+    background-color: rgb(119, 194, 45);
+    width: 80px;
+    height: 80px;
+}
+
+.quadrado_branco {
+    position: relative;
+    background-color: aliceblue;
+    width: 80px;
+    height: 80px;
+}
+
+.peao {
+    position: relative;
+    width: 70px;
+    height: 70px;
+}
